@@ -9,7 +9,7 @@
 
 This project contains the starting point used to create the grumpy cat GPT.
 
-It's really hard to code and watch at the same time, which is why this repository exists. Now that you've seen it call come together, give it a try yourself and use this project as a starting point. Once you've got things up and running, ,ake it your own, and change things around, turn this in to a happy puppy app, or something else!
+It's really hard to code and watch at the same time, which is why this repository exists. Now that you've seen it all come together, give it a try yourself and use this project as a starting point. Once you've got things up and running, make it your own, and change things around, turn this in to a happy puppy app, or something else!
 
 **Side note:** If you don't feel quite up for it, or feeling like you're needing a lot more foundational knowledge before digging in, fret not! We have lots of resources to help you get off the ground and more! Please reach out for more info.
 
@@ -43,3 +43,6 @@ Highly Recommended:
  - In your browser, goto `localhost:3000`
 
 
+## Important thing to know about this personal app
+
+This app is not production ready and is missing several key things. Speak to a Galvanize enrollment advisor to learn more about how to enroll in a Galvanize course and be able to turn an application such as this in to something production grade. 
