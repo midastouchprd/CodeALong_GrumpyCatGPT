@@ -1,8 +1,9 @@
-# Code-A-Long: CatGPT
+# Code-A-Long: Grumpy CatGPT
 
 ## Objectives
 
- - E
+ - Be able to provide a high level overview of how applications incorporate popular API's.
+ - Be able to modify and edit a codebase to perform a custom behavior.
 
 ![Grumpy CatGPT App Screen Shot](./readme_images/grumpyCatGPT.png)
 
