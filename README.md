@@ -39,8 +39,8 @@ Highly Recommended:
 ## Get Started
 
  - Replace the keys in `openai-test.js` configuration object with your own.
- - In your shell `npm start`.
- - In your browser, goto `localhost:3000`
+ - In your shell: `npm start`.
+ - In your browser, go to: `localhost:3000`
 
 
 ## Important thing to know about this personal app
