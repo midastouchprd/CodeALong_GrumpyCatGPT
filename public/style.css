@@ -1,0 +1,92 @@
+/* Happily stolen from css-tricks.com/don't-overthink-flexbox-grids */
+/* PS: I did not overthink it */
+
+.flex-grid {
+  display: flex;
+}
+
+.flex-grid .col {
+  flex: 1;
+}
+
+.flex-grid-thirds {
+  display: flex;
+  justify-content: space-between;
+}
+
+.flex-grid-thirds .col {
+    width: 34%;
+    height: 100%;
+}
+  
+* {
+  box-sizing: border-box;
+}
+
+@media (max-width: 400px) {
+    .flex-grid,
+    .flex-grid-thirds {
+        display: block;
+        .col {
+        width: 100%;
+        margin: 0 0 10px 0;
+        }
+    }
+}
+
+body {
+  padding: 0px;
+  background: black;
+  color: orchid;
+  font-weight: bold;
+  font-size: 2em;
+  font-family: 'Roboto', sans-serif;
+
+
+.flex-grid { 
+  margin: 0 0 0px 0;
+}
+
+.col {
+    padding: 20px;
+}
+
+.header {
+  /* background-color: orchid;   */
+  text-align: center;
+  border-top-left-radius: 150px;
+  border-top-right-radius: 150px;
+  border-left: 20px double orchid;
+  border-right: 20px double orchid;
+  border-top: 20px double orchid;
+  background: linear-gradient(90deg, rgba(219,17,225,1) 0%, rgba(23,80,40,1) 0%, rgba(38,3,29,1) 30%, rgba(38,3,29,1) 40%, rgba(141,0,108,0.9368474196319153) 100%);
+  
+}
+
+.left-content {
+  text-align: right;
+  border-left: 20px double orchid;
+  border-bottom-left-radius: 150px;
+  background-color: #043927;
+  font-weight: normal;
+  font-size: 1em;
+}
+
+.right-content {
+  text-align: left;  
+}
+
+.middle-content {
+  text-align: center;
+}
+
+#response {
+    color: yellow
+}
+
+#promptSubmit {
+    border: 3px inset orchid;
+    cursor: pointer;
+    font-weight: normal;
+    font-size: 1em;
+}
