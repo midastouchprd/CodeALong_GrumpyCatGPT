@@ -15,23 +15,23 @@
 }
 
 .flex-grid-thirds .col {
-    width: 34%;
-    height: 100%;
+  width: 34%;
+  height: 100%;
 }
-  
+
 * {
   box-sizing: border-box;
 }
 
 @media (max-width: 400px) {
-    .flex-grid,
-    .flex-grid-thirds {
-        display: block;
-        .col {
-        width: 100%;
-        margin: 0 0 10px 0;
-        }
+  .flex-grid,
+  .flex-grid-thirds {
+    display: block;
+    .col {
+      width: 100%;
+      margin: 0 0 10px 0;
     }
+  }
 }
 
 body {
@@ -41,14 +41,14 @@ body {
   font-weight: bold;
   font-size: 2em;
   font-family: 'Roboto', sans-serif;
+}
 
-
-.flex-grid { 
+.flex-grid {
   margin: 0 0 0px 0;
 }
 
 .col {
-    padding: 20px;
+  padding: 20px;
 }
 
 .header {
@@ -59,8 +59,14 @@ body {
   border-left: 20px double orchid;
   border-right: 20px double orchid;
   border-top: 20px double orchid;
-  background: linear-gradient(90deg, rgba(219,17,225,1) 0%, rgba(23,80,40,1) 0%, rgba(38,3,29,1) 30%, rgba(38,3,29,1) 40%, rgba(141,0,108,0.9368474196319153) 100%);
-  
+  background: linear-gradient(
+    90deg,
+    rgba(219, 17, 225, 1) 0%,
+    rgba(23, 80, 40, 1) 0%,
+    rgba(38, 3, 29, 1) 30%,
+    rgba(38, 3, 29, 1) 40%,
+    rgba(141, 0, 108, 0.9368474196319153) 100%
+  );
 }
 
 .left-content {
@@ -73,7 +79,10 @@ body {
 }
 
 .right-content {
-  text-align: left;  
+  text-align: left;
+  border-right: 20px double orchid;
+  border-bottom-right-radius: 150px;
+  transition: 0.2s ease-in-out;
 }
 
 .middle-content {
@@ -81,12 +90,12 @@ body {
 }
 
 #response {
-    color: yellow
+  color: yellow;
 }
 
 #promptSubmit {
-    border: 3px inset orchid;
-    cursor: pointer;
-    font-weight: normal;
-    font-size: 1em;
+  border: 3px inset orchid;
+  cursor: pointer;
+  font-weight: normal;
+  font-size: 1em;
 }

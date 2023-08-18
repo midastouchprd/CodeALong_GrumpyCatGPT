@@ -9,6 +9,10 @@ promptSubmitBtn.addEventListener('click', ()=>{
     .then(message => {
         responseArea.textContent = message
         promptSubmitBtn.style.visibility = "visible"
+        textPrompt.value = ""
+    }).catch(err => {
+        console.log(err)
+        promptSubmitBtn.style.visibility = "visible"
+        textPrompt.value = ""
     })
-    
 })

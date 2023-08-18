@@ -1,34 +1,32 @@
 import 'dotenv/config'
-import { Configuration, OpenAIApi } from "openai";
+import OpenAI from "openai";
 
-const YOUR_CONFIGURATION_INFO = {
-  FROM_OPEN_AI: new Configuration({
-    organization: process.env.ORGANIZATION, // see OpenAI docs
-    apiKey: process.env.API_KEY, // see OpenAI docs
-  }),
 
-  CHAT_GPT_SUFFIX: `(as grumpy cat but ends with a positive not-so-bad spin, and
+  const openai = new OpenAI({
+    apiKey: process.env.API_KEY,
+  });
+
+  const CHAT_GPT_SUFFIX = `(as grumpy cat but ends with a positive not-so-bad spin, and
       also not able to justify being grumpy anymore, and in less then 19 words)`
-}
 
-const openai = new OpenAIApi(YOUR_CONFIGURATION_INFO.FROM_OPEN_AI);
+
 
 const generateFromOpenAI = async (userPrompt) => {
-  const content = `${userPrompt} ${YOUR_CONFIGURATION_INFO.CHAT_GPT_SUFFIX}`
+  const content = `${userPrompt} ${CHAT_GPT_SUFFIX}`
   console.log(content);
   try {
-    const completion = await openai.createChatCompletion({
+    const completion = await openai.chat.completions.create({
         model: "gpt-3.5-turbo",
         messages: [{role: "user", content }],
         max_tokens: 30
     });
 
-    console.log(completion.data)
+    console.log(completion.choices)
 
-    return completion.data.choices[0].message.content
+    return completion.choices[0].message.content
 
   } catch (msg) {
-    console.error(msg.response.data);
+    console.error(msg);
   }
 }
 
